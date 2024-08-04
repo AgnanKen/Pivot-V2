@@ -1,0 +1,350 @@
+/* Chat Page Styles */
+.chat {
+    padding: 40px 10px;
+    background-color: #e8f5e9; /* Light green background to match the homepage */
+}
+
+.chat-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background for chat box */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.chat-box .message {
+    margin-bottom: 15px;
+}
+
+.chat-box .message .message-content {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.chat-box .message .message-content.user {
+    background-color: #a5d6a7; /* Light green for user messages */
+    text-align: right;
+}
+
+.chat-box .message .message-content.other {
+    background-color: #ffffff; /* White background for other messages */
+    text-align: left;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-input input {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    background-color: #00796b; /* Dark green for button */
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+    background-color: #004d40; /* Darker green for button hover effect */
+}
+
+/* Responsive adjustments for the chat page */
+@media (max-width: 768px) {
+    .chat-box {
+        height: 300px;
+    }
+
+    .chat-input input {
+        width: 70%;
+    }
+
+    .chat-input button {
+        width: 25%;
+    }
+}
+
+@media (max-width: 480px) {
+    .chat-box {
+        height: 200px;
+    }
+
+    .chat-input input {
+        width: 60%;
+    }
+
+    .chat-input button {
+        width: 35%;
+    }
+}
+/* Resetting default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #e8f5e9; /* Light green background */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff; /* White background for header */
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #a5d6a7; /* Light green hover effect */
+}
+
+.nav-toggle {
+    display: none;
+    background-color: #00796b; /* Dark green for nav toggle button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hero {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #ffffff; /* White background for hero section */
+    border-bottom: 1px solid #ddd;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.hero form {
+    display: flex;
+    justify-content: center;
+}
+
+.hero input[type="text"] {
+    padding: 12px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.hero button {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-left: none;
+    background-color: #00796b; /* Dark green for buttons */
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #004d40; /* Darker green for button hover effect */
+}
+
+.gigs {
+    padding: 40px 0;
+}
+
+.gigs h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: #333;
+}
+
+.gig-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gig {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* White background for gig cards */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gig:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.gig img {
+    max-width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.gig h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.gig p {
+    font-size: 16px;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: inline-block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .gig {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero input[type="text"] {
+        width: 200px;
+    }
+
+    .gig {
+        width: 100%;
+    }
+}
+
+/* Form styles */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #ffffff; /* White background for form container */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00796b; /* Dark green for form button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #004d40; /* Darker green for form button hover effect */
+}

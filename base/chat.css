@@ -1,0 +1,95 @@
+/* Chat Page Styles */
+.chat {
+    padding: 40px 10px;
+    background-color: #e8f5e9; /* Light green background to match the homepage */
+}
+
+.chat-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background for chat box */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.chat-box .message {
+    margin-bottom: 15px;
+}
+
+.chat-box .message .message-content {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.chat-box .message .message-content.user {
+    background-color: #a5d6a7; /* Light green for user messages */
+    text-align: right;
+}
+
+.chat-box .message .message-content.other {
+    background-color: #ffffff; /* White background for other messages */
+    text-align: left;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-input input {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    background-color: #00796b; /* Dark green for button */
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+    background-color: #004d40; /* Darker green for button hover effect */
+}
+
+/* Responsive adjustments for the chat page */
+@media (max-width: 768px) {
+    .chat-box {
+        height: 300px;
+    }
+
+    .chat-input input {
+        width: 70%;
+    }
+
+    .chat-input button {
+        width: 25%;
+    }
+}
+
+@media (max-width: 480px) {
+    .chat-box {
+        height: 200px;
+    }
+
+    .chat-input input {
+        width: 60%;
+    }
+
+    .chat-input button {
+        width: 35%;
+    }
+}

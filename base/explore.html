@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - Fiverr Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fiverr Clone</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="profile.html">Profile</a>
+            <a href="about.html">About</a>
+            <a href="messages.html">Messages</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Explore Gigs</h2>
+        <input type="text" id="searchInput" placeholder="Search gigs..." onkeyup="filterGigs()">
+
+        <div class="gig-grid" id="gigGrid">
+            <div class="gig-card">
+                <h3>Gig Title 1</h3>
+                <p>Description of Gig 1</p>
+                <a href="gig-details.html">View Details</a>
+            </div>
+            <div class="gig-card">
+                <h3>Gig Title 2</h3>
+                <p>Description of Gig 2</p>
+                <a href="gig-details.html">View Details</a>
+            </div>
+            <div class="gig-card">
+                <h3>Gig Title 3</h3>
+                <p>Description of Gig 3</p>
+                <a href="gig-details.html">View Details</a>
+            </div>
+            <!-- Add more gig cards as needed -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fiverr Clone</p>
+    </footer>
+
+    <script src="js/explore.js"></script>
+</body>
+</html>

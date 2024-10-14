@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - PivotPro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    
+</head>
+<body>
+    <header>
+        <h1>PivotPro</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse Contractors</a>
+        <a href="post contract.html">Post a Contract</a>
+        <a href="about.html">About</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+    <section class="profile-container">
+        <div class="profile-card">
+            <img id="profile-pic" src="profile.jpg" alt="Profile Picture">
+            <h2 id="profile-name">John Doe</h2>
+            <p id="profile-bio">Web Developer with 5 years of experience in building modern web applications.</p>
+            <button class="btn-primary" id="edit-profile-btn">Edit Profile</button>
+        </div>
+
+        <div class="profile-form-container" id="profile-form">
+            <form>
+                <label for="profile-name-input">Name</label>
+                <input type="text" id="profile-name-input" value="John Doe">
+                
+                <label for="profile-bio-input">Bio</label>
+                <textarea id="profile-bio-input">Web Developer with 5 years of experience in building modern web applications.</textarea>
+                
+                <label for="profile-pic-input">Profile Picture</label>
+                <input type="file" id="profile-pic-input">
+                
+                <button type="submit" class="btn-primary">Save Changes</button>
+                <button type="button" class="btn-secondary" id="cancel-edit-btn">Cancel</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PivotPro. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Contract - PivotPro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="post contract.css">
+    <script defer src="post contract.js"></script>
+</head>
+<body>
+    <header>
+        <h1>PivotPro</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse Contractors</a>
+        <a href="post-contract.html">Post a Job</a>
+        <a href="about.html">About</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+    <section class="contract-form-container">
+        <h2>Post a Contract</h2>
+        <p>Share details about your project to connect with the right contractors.</p>
+
+        <form id="contract-form">
+            <label for="title">Project Title</label>
+            <input type="text" id="title" placeholder="e.g., Kitchen Renovation">
+
+            <label for="description">Project Description</label>
+            <textarea id="description" placeholder="Provide a detailed description of your project..."></textarea>
+
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="e.g., Los Angeles, CA">
+
+            <label for="budget">Budget ($)</label>
+            <input type="number" id="budget" placeholder="e.g., 5000">
+
+            <label for="requirements">Additional Requirements</label>
+            <textarea id="requirements" placeholder="e.g., Looking for experienced contractors..."></textarea>
+
+            <button type="submit" class="btn-primary">Post Contract</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PivotPro. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
